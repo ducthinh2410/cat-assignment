@@ -13,7 +13,13 @@
 		25A4B5A8234F868A008B4032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A4B5A6234F868A008B4032 /* Main.storyboard */; };
 		25A4B5AA234F868C008B4032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A4B5A9234F868C008B4032 /* Assets.xcassets */; };
 		25A4B5AD234F868C008B4032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A4B5AB234F868C008B4032 /* LaunchScreen.storyboard */; };
-		25A4B5B8234F868D008B4032 /* CataaSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5B7234F868D008B4032 /* CataaSTests.swift */; };
+		25A4B5C6234F8D95008B4032 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5C5234F8D95008B4032 /* APIRequest.swift */; };
+		25A4B5C8234F8DA9008B4032 /* APIRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5C7234F8DA9008B4032 /* APIRequestLoader.swift */; };
+		25A4B5CA234F8DB7008B4032 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5C9234F8DB7008B4032 /* APIConfiguration.swift */; };
+		25A4B5CC234FB864008B4032 /* CatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5CB234FB864008B4032 /* CatRequest.swift */; };
+		25A4B5CE234FE193008B4032 /* CatRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5CD234FE193008B4032 /* CatRequestTests.swift */; };
+		25A4B5D0234FE8CB008B4032 /* CatRequestLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5CF234FE8CB008B4032 /* CatRequestLoaderTests.swift */; };
+		25A4B5D4234FE913008B4032 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B5D3234FE913008B4032 /* MockURLProtocol.swift */; };
 		3970C2A220B2BFA621F3F8CA /* Pods_CataaS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0580431DE229816F43C5B550 /* Pods_CataaS.framework */; };
 		703D2AE6AAAADD50BBB54735 /* Pods_CataaSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DAD4424571FB161BD1E93 /* Pods_CataaSTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,8 +45,14 @@
 		25A4B5AC234F868C008B4032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25A4B5AE234F868C008B4032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A4B5B3234F868D008B4032 /* CataaSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CataaSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A4B5B7234F868D008B4032 /* CataaSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataaSTests.swift; sourceTree = "<group>"; };
 		25A4B5B9234F868D008B4032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25A4B5C5234F8D95008B4032 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		25A4B5C7234F8DA9008B4032 /* APIRequestLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestLoader.swift; sourceTree = "<group>"; };
+		25A4B5C9234F8DB7008B4032 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		25A4B5CB234FB864008B4032 /* CatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRequest.swift; sourceTree = "<group>"; };
+		25A4B5CD234FE193008B4032 /* CatRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRequestTests.swift; sourceTree = "<group>"; };
+		25A4B5CF234FE8CB008B4032 /* CatRequestLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRequestLoaderTests.swift; sourceTree = "<group>"; };
+		25A4B5D3234FE913008B4032 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		647C9171518A8F0F1F4F2111 /* Pods-CataaSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CataaSTests.debug.xcconfig"; path = "Target Support Files/Pods-CataaSTests/Pods-CataaSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD2D06F3B9ECFD525169A19F /* Pods-CataaS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CataaS.debug.xcconfig"; path = "Target Support Files/Pods-CataaS/Pods-CataaS.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8DAD4424571FB161BD1E93 /* Pods_CataaSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CataaSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +110,7 @@
 				25A4B5A9234F868C008B4032 /* Assets.xcassets */,
 				25A4B5AB234F868C008B4032 /* LaunchScreen.storyboard */,
 				25A4B5AE234F868C008B4032 /* Info.plist */,
+				25A4B5C3234F8C20008B4032 /* Networking */,
 			);
 			path = CataaS;
 			sourceTree = "<group>";
@@ -105,10 +118,31 @@
 		25A4B5B6234F868D008B4032 /* CataaSTests */ = {
 			isa = PBXGroup;
 			children = (
-				25A4B5B7234F868D008B4032 /* CataaSTests.swift */,
 				25A4B5B9234F868D008B4032 /* Info.plist */,
+				25A4B5CD234FE193008B4032 /* CatRequestTests.swift */,
+				25A4B5CF234FE8CB008B4032 /* CatRequestLoaderTests.swift */,
+				25A4B5D3234FE913008B4032 /* MockURLProtocol.swift */,
 			);
 			path = CataaSTests;
+			sourceTree = "<group>";
+		};
+		25A4B5C3234F8C20008B4032 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B5C4234F8D56008B4032 /* Core */,
+				25A4B5CB234FB864008B4032 /* CatRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		25A4B5C4234F8D56008B4032 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B5C5234F8D95008B4032 /* APIRequest.swift */,
+				25A4B5C7234F8DA9008B4032 /* APIRequestLoader.swift */,
+				25A4B5C9234F8DB7008B4032 /* APIConfiguration.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		C6C45059F4F98CD57F3D8CA8 /* Pods */ = {
@@ -187,6 +221,7 @@
 					};
 					25A4B5B2234F868D008B4032 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = 25A4B59C234F868A008B4032;
 					};
 				};
@@ -299,9 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A4B5CC234FB864008B4032 /* CatRequest.swift in Sources */,
 				25A4B5A5234F868A008B4032 /* ViewController.swift in Sources */,
+				25A4B5CA234F8DB7008B4032 /* APIConfiguration.swift in Sources */,
 				25A4B5A1234F868A008B4032 /* AppDelegate.swift in Sources */,
+				25A4B5C6234F8D95008B4032 /* APIRequest.swift in Sources */,
 				25A4B5A3234F868A008B4032 /* SceneDelegate.swift in Sources */,
+				25A4B5C8234F8DA9008B4032 /* APIRequestLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A4B5B8234F868D008B4032 /* CataaSTests.swift in Sources */,
+				25A4B5D4234FE913008B4032 /* MockURLProtocol.swift in Sources */,
+				25A4B5CE234FE193008B4032 /* CatRequestTests.swift in Sources */,
+				25A4B5D0234FE8CB008B4032 /* CatRequestLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GG6MPK9MH;
 				INFOPLIST_FILE = CataaSTests/Info.plist;
@@ -512,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.assignment.CataaS.CataaSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CataaS.app/CataaS";
@@ -524,6 +567,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GG6MPK9MH;
 				INFOPLIST_FILE = CataaSTests/Info.plist;
